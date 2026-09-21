@@ -6,7 +6,7 @@
 (https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
 **Related:** [data handling checklist design](2026-09-20-data-handling-checklist-design.md)
 
-## Problem
+## Purpose
 
 The team has one dense client brief and a stakeholder interview with Dana
 Okafor ahead of it. Dana is the scarce resource: she travels Tuesdays and
@@ -18,26 +18,81 @@ the team needs is accumulated understanding — the brief's claims made explicit
 external research folded in against them, and the gaps that remain surfaced as
 questions with a traceable reason for existing.
 
-This spec instantiates the LLM Wiki pattern for that purpose: immutable sources
-in `raw/`, an agent-maintained wiki in `wiki/`, and a schema file that makes
-the agent a disciplined maintainer rather than a generic chatbot.
+This spec instantiates the LLM Wiki pattern for that purpose. The wiki exists
+so the team walks into the interview informed; `analysis/interview-guide.md` is
+the artifact they carry into the room.
 
-## Goals
+It must:
 
-- The team reads the wiki and walks into the interview informed.
-- Produce `analysis/interview-guide.md`, where every question traces back to
-  the page, and through it the source, that motivated it.
-- Accumulate rather than re-derive: each new source updates the existing
+- Accumulate rather than re-derive — each new source updates the existing
   synthesis instead of being read fresh at query time.
-- Stay useful after the interview — the register becomes the record of Dana's
-  answers.
+- Make every interview question traceable back through the page, and through it
+  the source, that motivated it.
+- Remain useful after the interview, when the register becomes the record of
+  Dana's answers.
 
-## Non-goals
+## Scope
 
-- Search tooling (qmd or similar). `index.md` is sufficient at this scale.
-- Obsidian-specific features. The user does not use Obsidian (see D3).
-- Ingesting any client data extract. Structurally prohibited (see D7).
-- A slide/Marp output path. Markdown only for now.
+**In scope**
+
+- The three layers below, instantiated in this repository.
+- Ingest, query, and lint workflows, documented in the schema so they survive
+  across sessions.
+- A themed question register and the interview guide generated from it.
+- Sources: the client brief, plus external public research (industry,
+  demographics, competitors, the Pasadena trade area).
+
+**Out of scope**
+
+- Search tooling such as qmd. `index.md` is sufficient at this scale
+  (one source now, tens expected).
+- Obsidian-specific features — graph view, backlinks, Dataview. The user does
+  not run Obsidian (see D3).
+- Any ingest of the client data extract. Structurally prohibited (see D7).
+- Slide or Marp output. Markdown only.
+- A fifth `assumptions/` page type. The register carries that load (see D2).
+
+## Layers
+
+The pattern defines three layers. Mapped onto this engagement:
+
+**Raw sources** — `raw/`. Immutable. The user adds documents; the agent reads
+but never modifies them. Currently `client-brief.md`; external research is
+saved here as local Markdown rather than referenced by URL, so the corpus stays
+reviewable and stable (see D7).
+
+**The wiki** — `wiki/`. Agent-owned in its entirety. The agent creates pages,
+updates them as sources arrive, maintains cross-references, and keeps the
+catalog and log current. The team reads this layer; the agent writes it.
+
+**The schema** — `wiki/CLAUDE.md`. Page formats, naming conventions, and the
+ingest/query/lint workflows, plus the data-handling rule of D7. This is what
+makes the agent a disciplined maintainer across sessions rather than a fresh
+chatbot each time. A short root `CLAUDE.md` points to it without loading the
+whole schema into unrelated sessions.
+
+## Directory layout
+
+```
+raw/                        immutable; the user adds, the agent never modifies
+  client-brief.md
+  <research sources>.md
+
+wiki/
+  CLAUDE.md                 schema: page formats, workflows, conventions, D7 rule
+  index.md                  catalog by category: page, link, one-line summary
+  log.md                    append-only, "## [YYYY-MM-DD] ingest | N sources"
+  sources/                  one page per raw document, with frontmatter
+  entities/                 Dana, Marcus, the board, stores, competitors, POS system
+  concepts/                 expansion strategy, loyalty program, prepared foods,
+                            unit economics
+  analysis/
+    open-questions.md       the register
+    interview-guide.md      the deliverable, generated from the register
+    <synthesis pages>
+
+CLAUDE.md                   root pointer to wiki/CLAUDE.md
+```
 
 ## Decisions
 
@@ -136,29 +191,6 @@ the repo's git history and the team's existing access. `wiki/CLAUDE.md` holds
 page formats, naming conventions, and the ingest/query/lint workflows. A short
 root `CLAUDE.md` tells Claude the wiki exists and when to open it, without
 loading the full schema into every unrelated session.
-
-## Layout
-
-```
-raw/                        immutable; the user adds, the agent never modifies
-  client-brief.md
-  <research sources>.md
-
-wiki/
-  CLAUDE.md                 schema: page formats, workflows, conventions, D7 rule
-  index.md                  catalog by category: page, link, one-line summary
-  log.md                    append-only, "## [YYYY-MM-DD] ingest | N sources"
-  sources/                  one page per raw document, with frontmatter
-  entities/                 Dana, Marcus, the board, stores, competitors, POS system
-  concepts/                 expansion strategy, loyalty program, prepared foods,
-                            unit economics
-  analysis/
-    open-questions.md       the register
-    interview-guide.md      the deliverable, generated from the register
-    <synthesis pages>
-
-CLAUDE.md                   root pointer to wiki/CLAUDE.md
-```
 
 ## Page formats
 

@@ -8,8 +8,8 @@ Meridian Markets' fourteen stores, per the [client brief](../sources/client-brie
   ([brief](../sources/client-brief.md)).
 - Grew from six to fourteen stores in five years
   ([brief](../sources/client-brief.md)).
-- The eight newer stores came mostly from leases taken over from national
-  chains that exited neighborhoods Meridian judged underserved
+- The eight newer stores came mostly from leases taken over from chains that
+  exited neighborhoods Meridian judged underserved
   ([brief](../sources/client-brief.md)).
 - Roughly $78M annual revenue and about 620 employees across the chain
   ([brief](../sources/client-brief.md)).

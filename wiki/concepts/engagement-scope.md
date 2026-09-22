@@ -15,7 +15,8 @@ criteria, per the [client brief](../sources/client-brief.md).
   ([brief](../sources/client-brief.md)).
 - The brief describes an artifact and three broad outcomes, but not the
   decision criterion that would make the artifact useful — this gap is worth
-  naming plainly rather than resolving by assumption.
+  naming plainly rather than resolving by assumption
+  ([brief](../sources/client-brief.md)).
 
 ## Open questions
 

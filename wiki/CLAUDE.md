@@ -9,9 +9,11 @@ informed, and `analysis/interview-guide.md` is what they carry into the room.
 ## Hard rule: what may enter this wiki
 
 **Nothing classified Restricted may ever become a wiki source or appear on a
-wiki page.** That means no loyalty program data, no labor schedules, no
-row-level POS transactions, and nothing derived from them — regardless of
-aggregation. Nothing under `MERIDIAN_DATA_ROOT` is ever read into this wiki.
+wiki page.** No loyalty or labor data, and nothing derived from either,
+regardless of aggregation. No row-level POS transactions (treated as
+Restricted pending the client's answer — register Q10). Sales totals by
+store × week and store attributes are Shareable. Nothing under
+`MERIDIAN_DATA_ROOT` is ever read into this wiki.
 
 This wiki is written by an AI tool, so every page in it is Shareable-class by
 construction. The client data extract is analyzed in code, never ingested here.
@@ -24,8 +26,9 @@ See `docs/superpowers/specs/2026-09-20-data-handling-checklist-design.md`.
 
 ## Layers
 
-- `raw/` — immutable source documents. Read, never modify. External research is
-  saved here as local Markdown, never referenced only by URL.
+- `raw/` — immutable source documents. Read, never modify. The user adds
+  documents to `raw/`; Claude saves external research there only when the
+  user asks, as local Markdown, never referenced only by URL.
 - `wiki/` — this directory. Claude owns it entirely.
 - `wiki/CLAUDE.md` — this file. The schema.
 
@@ -50,6 +53,9 @@ neither of which resolves it.
 **Every assertion on an entity or concept page links to the source page it came
 from.** A claim with no link back to `sources/` is a lint failure. This is what
 lets an interview question be traced back through a page to a document.
+
+**The team's inferences are labeled `*Team inference:*`, cite the premise they
+rest on, and are never presented as the source's claim.**
 
 ## Page formats
 
@@ -100,6 +106,8 @@ Columns: `ID | Question | Owner | Origin | Why it matters | Status`. Rows are gr
 - IDs are `Q<n>`, assigned in order and never reused.
 - When a question is answered, set status to `answered` and record the answer
   inline in the row. After the interview the register is the interview record.
+- A register row's Origin is the page whose "What we know" motivates the
+  question, and that page's "Open questions" section lists the row's ID.
 
 ### The interview guide — `analysis/interview-guide.md`
 
@@ -120,7 +128,9 @@ The user drops one or more sources into `raw/` and says go. For each source:
 3. Update every affected entity and concept page; create pages that do not yet
    exist and are justified by the source.
 4. Add register rows for questions the source raises; mark rows the source
-   answers as `answered`.
+   answers as `answered`. A register row's Origin is the page whose "What we
+   know" motivates the question, and that page's "Open questions" section
+   lists the row's ID.
 5. Update `index.md`.
 
 Then append **one** log entry for the whole batch, and run a lint pass.
@@ -142,6 +152,7 @@ Check for:
 - Assertions with no source link.
 - Register hygiene: duplicate questions, questions the batch just answered,
   rows with no origin link.
+- Register rows whose origin page does not list their ID.
 
 Report findings. Do not silently resolve anything requiring judgment.
 
@@ -152,4 +163,20 @@ one-line summary. Updated on every ingest.
 
 `log.md` is chronological and append-only. Every entry starts
 `## [YYYY-MM-DD] <operation> | <summary>` so that
-`grep "^## \[" wiki/log.md | tail -5` shows recent history.
+`grep "^## \[" wiki/log.md | tail -5` shows recent history. Date entries with
+the actual date of the work.
+
+Log entry body template:
+
+```markdown
+Sources in: <sources touched, or "none">
+Pages touched: <entities/concepts/analysis pages created or edited>
+Register: +N open, M answered, K deferred
+Notes: <anything worth flagging>
+```
+
+Index status-line format:
+
+```
+**Status:** N sources ingested · N entities · N concepts · N questions (N open, N deferred)
+```

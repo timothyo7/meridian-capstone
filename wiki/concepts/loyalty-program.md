@@ -18,8 +18,7 @@ repository. See the [data handling checklist spec](../../docs/superpowers/specs/
 
 ## Open questions
 
-Q18 in the [register](../analysis/open-questions.md). Q22 is tracked as
-deferred research.
+Q18 in the [register](../analysis/open-questions.md).
 
 ## Related pages
 

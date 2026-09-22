@@ -1,0 +1,89 @@
+# Interview guide — Dana Okafor
+
+> **Draft.** Generated from the [register](open-questions.md) on 2026-09-20,
+> when the wiki held a single source: the client brief. It will be regenerated
+> once external research is ingested. Do not treat this as the finished plan.
+
+Includes register rows owned by Dana with status `open` — 17 questions.
+Questions for Marcus (Q5–Q8) are held for a separate IT conversation; research
+questions (Q22–Q23) are answerable without Dana.
+
+Grouped by theme, not ranked globally — the conversation should flow by topic.
+**Bolded questions are the ones that survive if the meeting is cut short.**
+
+## 1. Scope & success criteria
+
+*Opening: the brief describes an artifact — a dashboard — but the team's read
+is that the underlying need is a siting decision. This theme establishes which
+one the engagement is for.*
+
+- **Q1 — Revenue, operating cost, and customer experience are all named as
+  goals. If they pull in different directions, which one wins?**
+  ([engagement-scope](../concepts/engagement-scope.md))
+- **Q2 — What decision does the board need to make in three weeks, and what
+  would change it?** ([engagement-scope](../concepts/engagement-scope.md))
+- Q3 — At week eight, do you need a working dashboard, a written
+  recommendation, or both? ([engagement-scope](../concepts/engagement-scope.md))
+- Q4 — Who besides leadership will use the dashboard, and what do they decide
+  with it? ([engagement-scope](../concepts/engagement-scope.md))
+
+## 2. Data & access
+
+*Opening: everything downstream is gated on the extract, and three weeks to the
+board is short. These are the questions Marcus cannot answer.*
+
+- **Q9 — Has the NDA been signed, and when can we request the extract from
+  Marcus?** ([engagement-scope](../concepts/engagement-scope.md))
+- **Q10 — Does Meridian consider row-level POS transactions restricted for AI
+  tool use, or only loyalty and labor data? We have assumed restricted.**
+  ([pos-system](../entities/pos-system.md))
+
+## 3. The Pasadena assumption
+
+*Opening: handle with care. The brief states Pasadena is the obvious next step
+and asks for data to back it up. The goal here is to understand the existing
+reasoning, not to challenge it in the room.*
+
+- **Q12 — What makes Pasadena obvious to leadership? What do you already know
+  that points there?** ([expansion-strategy](../concepts/expansion-strategy.md))
+- **Q11 — Is there a signed LOI or lease on the site, or is it still
+  exploratory?** ([pasadena-site](../entities/pasadena-site.md))
+- **Q13 — What would have to be true for you to decide against it?**
+  ([expansion-strategy](../concepts/expansion-strategy.md))
+- Q14 — Are there other candidate sites we should be evaluating Pasadena
+  against? ([pasadena-site](../entities/pasadena-site.md))
+
+## 4. Business & operations
+
+*Opening: the brief says growth has been uneven but does not say which stores
+or why. Leadership's read is a useful check on whatever the data shows.*
+
+- **Q15 — Which stores do you consider the successes, and which have been
+  slower?** ([store-performance-variation](../concepts/store-performance-variation.md))
+- **Q16 — Do the eight stores you took over from departing chains behave
+  differently from the original six?** ([store-network](../entities/store-network.md))
+- Q17 — What drives operating cost differences between stores — labor, rent,
+  shrink? ([store-performance-variation](../concepts/store-performance-variation.md))
+- Q18 — Has the loyalty data ever been used for anything — promotions,
+  segmentation, site selection? ([loyalty-program](../concepts/loyalty-program.md))
+
+## 5. Stakeholders & process
+
+*Opening: short, and worth doing even if time is tight — it determines whether
+the next eight weeks are blocked.*
+
+- **Q19 — Who decides on expansion, and who is most skeptical of it?**
+  ([meridian-leadership](../entities/meridian-leadership.md))
+- **Q21 — When you are traveling, who can answer analytics questions?**
+  ([dana-okafor](../entities/dana-okafor.md))
+- Q20 — Who signs off on the final deliverable, and what format does the board
+  expect? ([meridian-leadership](../entities/meridian-leadership.md))
+
+---
+
+## After the interview
+
+Record answers inline in the [register](open-questions.md), set those rows to
+`answered`, and append a log entry. If Dana volunteers customer or employee
+specifics, those notes go to restricted storage outside this repository — not
+into the wiki.

@@ -11,6 +11,10 @@ as the person who pulls the data extract for the team.
   ([brief](../sources/client-brief.md)).
 - No stated role, seniority, or availability — all unknown
   ([brief](../sources/client-brief.md)).
+- The extract he pulls covers POS transactions (about three years), loyalty
+  membership and purchase history, labor scheduling and hours, and store
+  attributes (square footage, opening date, lease terms)
+  ([brief](../sources/client-brief.md)).
 
 ## Open questions
 

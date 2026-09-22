@@ -20,8 +20,9 @@ one the engagement is for.*
 - **Q1 — Revenue, operating cost, and customer experience are all named as
   goals. If they pull in different directions, which one wins?**
   ([engagement-scope](../concepts/engagement-scope.md))
-- **Q2 — What decision does the board need to make in three weeks, and what
-  would change it?** ([engagement-scope](../concepts/engagement-scope.md))
+- **Q2 — What decision does the board need to make when it meets three weeks
+  from the August brief, and what would change it?**
+  ([engagement-scope](../concepts/engagement-scope.md))
 - Q3 — At week eight, do you need a working dashboard, a written
   recommendation, or both? ([engagement-scope](../concepts/engagement-scope.md))
 - Q4 — Who besides leadership will use the dashboard, and what do they decide
@@ -29,8 +30,9 @@ one the engagement is for.*
 
 ## 2. Data & access
 
-*Opening: everything downstream is gated on the extract, and three weeks to the
-board is short. These are the questions Marcus cannot answer.*
+*Opening: everything downstream is gated on the extract, and the board meets
+three weeks from the August brief. These are the questions Marcus cannot
+answer.*
 
 - **Q9 — Has the NDA been signed, and when can we request the extract from
   Marcus?** ([engagement-scope](../concepts/engagement-scope.md))
@@ -60,8 +62,9 @@ or why. Leadership's read is a useful check on whatever the data shows.*
 
 - **Q15 — Which stores do you consider the successes, and which have been
   slower?** ([store-performance-variation](../concepts/store-performance-variation.md))
-- **Q16 — Do the eight stores you took over from departing chains behave
-  differently from the original six?** ([store-network](../entities/store-network.md))
+- **Q16 — Which of the eight newer stores were taken-over leases, and do they
+  behave differently from the original six?**
+  ([store-network](../entities/store-network.md))
 - Q17 — What drives operating cost differences between stores — labor, rent,
   shrink? ([store-performance-variation](../concepts/store-performance-variation.md))
 - Q18 — Has the loyalty data ever been used for anything — promotions,

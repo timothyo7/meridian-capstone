@@ -70,10 +70,13 @@ First source in the wiki. Created:
   [Differentiation](../concepts/differentiation.md),
   [Store performance variation](../concepts/store-performance-variation.md),
   [Engagement scope](../concepts/engagement-scope.md)
+- Analysis: [Open questions register](../analysis/open-questions.md),
+  [Interview guide](../analysis/interview-guide.md)
 
 ## Questions it raises
 
 The brief is most informative in what it does not say: it names a preferred
 outcome (Pasadena) before the analysis, states three success criteria without
 ranking them, and describes the requested artifact (a dashboard) rather than the
-decision it serves. Seeded into the register as Q1–Q23.
+decision it serves. Seeded into the [register](../analysis/open-questions.md)
+as Q1–Q23.

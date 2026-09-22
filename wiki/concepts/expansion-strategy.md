@@ -9,8 +9,9 @@ next one.
   ([brief](../sources/client-brief.md)).
 - Growth came "mostly by taking over leases from chains that pulled out of
   neighborhoods we thought were underserved" ([brief](../sources/client-brief.md)).
-  The site-selection criterion was therefore availability plus a judgment about
-  under-service, not a modeled trade area.
+  *Team inference:* resting on that quote, the site-selection criterion was
+  therefore availability plus a judgment about under-service, not a modeled
+  trade area.
 - Decisions to date have been made "on instinct and a spreadsheet"
   ([brief](../sources/client-brief.md)).
 - [Pasadena](../entities/pasadena-site.md) is named as "the obvious next step,"

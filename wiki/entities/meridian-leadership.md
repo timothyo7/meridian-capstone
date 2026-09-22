@@ -9,8 +9,8 @@ Dana Okafor.
 - "Leadership" is referenced as the audience for the dashboard and the decider
   on expansion; no individuals are named beyond Dana
   ([brief](../sources/client-brief.md)).
-- A board exists and meets in three weeks; Dana wants something preliminary to
-  show them then ([brief](../sources/client-brief.md)).
+- A board exists and meets three weeks from the August brief; Dana wants
+  something preliminary to show them then ([brief](../sources/client-brief.md)).
 - Leadership "wants a clearer picture before the next round of expansion"
   ([brief](../sources/client-brief.md)).
 

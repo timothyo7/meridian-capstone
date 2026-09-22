@@ -4,8 +4,8 @@ Meridian Markets' point-of-sale system, per the [client brief](../sources/client
 
 ## What we know
 
-- Meridian migrated to a new POS system in spring 2026 and calls it an
-  improvement ([brief](../sources/client-brief.md)).
+- Meridian migrated to a new POS system last spring (per the August 2026
+  brief) and calls it an improvement ([brief](../sources/client-brief.md)).
 - About three years of POS transaction history exists, spanning the migration
   ([brief](../sources/client-brief.md)).
 - The brief does not say whether history is continuous across the migration

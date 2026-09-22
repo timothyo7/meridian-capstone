@@ -13,10 +13,11 @@ criteria, per the [client brief](../sources/client-brief.md).
   three weeks ([brief](../sources/client-brief.md)).
 - Data access is gated on NDA signature, via [Marcus](../entities/marcus.md)
   ([brief](../sources/client-brief.md)).
-- The brief describes an artifact and three broad outcomes, but not the
-  decision criterion that would make the artifact useful — this gap is worth
-  naming plainly rather than resolving by assumption
-  ([brief](../sources/client-brief.md)).
+- The brief describes an artifact and three broad outcomes
+  ([brief](../sources/client-brief.md)). *Team inference:* resting on that
+  gap, the brief does not state the decision criterion that would make the
+  artifact useful, and that gap is worth naming plainly rather than resolving
+  by assumption.
 
 ## Open questions
 

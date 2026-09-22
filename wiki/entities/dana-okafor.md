@@ -23,7 +23,7 @@ contact. Author of the [client brief](../sources/client-brief.md).
 
 ## Open questions
 
-Tracked in the [register](../analysis/open-questions.md) as Q1–Q4, Q11–Q21.
+Tracked in the [register](../analysis/open-questions.md) as Q1–Q4, Q9–Q21.
 
 ## Related pages
 

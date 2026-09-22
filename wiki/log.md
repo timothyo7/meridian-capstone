@@ -26,7 +26,7 @@ for contradictions and unsourced claims.
 Findings: Step 1's link-check script flagged `CLAUDE.md -> ../entities/dana-okafor.md`
 as broken; this is a false positive — the match is an illustrative link inside
 CLAUDE.md's prose documenting the linking convention, not an actual link from
-that file's location, and the target page exists. No fix needed. Two judgment
+that file's location, and the target page exists. No fix needed. Three judgment
 findings from manual review, reported per the schema rather than resolved:
 (1) `index.md`'s status line says "23 open questions" but only 21 of the 23
 register rows are `open` (2 are `deferred`) — contradicts the register and the
@@ -42,5 +42,33 @@ defect as (2): origin link and where the question is surfaced disagree. A
 systematic sweep of all 23 register rows against each origin page's "Open
 questions" section (counting ranges like "Q11–Q14" as naming every ID in the
 range) found no other mismatches.
+Wiki state: 1 source, 6 entities, 5 concepts, 23 register questions (21 open,
+2 deferred), 1 draft interview guide.
+
+## [2026-09-20] lint | resolve first-build findings
+
+Sources in: none
+Pages touched: `index.md`, `log.md` (this entry), `analysis/open-questions.md`,
+`analysis/interview-guide.md`, `sources/client-brief.md`, `CLAUDE.md`,
+entities: marcus, dana-okafor, meridian-leadership, pasadena-site, pos-system,
+concepts: expansion-strategy, store-performance-variation, engagement-scope.
+Register: +0 open, 0 answered, 0 deferred (no rows added or resolved; Q7, Q8,
+and Q23 origin links corrected; Q16 reworded).
+
+Notes: resolved the three lint findings from the first-build entry above.
+`index.md`'s status line now reads "23 questions (21 open, 2 deferred)",
+matching the register and log. Q7 and Q8's origin now points to
+`entities/marcus.md`, which lists them in its "Open questions" section; the
+CLAUDE.md schema now states the origin/list invariant explicitly and lints for
+it. Also folded in the rest of the controller-ruled final-review fix wave:
+narrowed the Restricted-data rule in `CLAUDE.md` to match the data handling
+checklist; reworded Q16 and its matching claims so they no longer assert all
+eight newer stores were taken-over leases; added a sourced bullet to
+`marcus.md` naming the datasets in the extract; labeled team-inference bullets
+with `*Team inference:*` on expansion-strategy.md, store-performance-variation.md,
+engagement-scope.md, and pasadena-site.md; anchored "spring 2026" and "three
+weeks" to the August 2026 brief throughout; added Q9/Q10 to dana-okafor.md's
+open questions; moved Q23's origin to pasadena-site.md; and linked the register
+from `sources/client-brief.md`.
 Wiki state: 1 source, 6 entities, 5 concepts, 23 register questions (21 open,
 2 deferred), 1 draft interview guide.

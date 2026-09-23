@@ -72,3 +72,24 @@ open questions; moved Q23's origin to pasadena-site.md; and linked the register
 from `sources/client-brief.md`.
 Wiki state: 1 source, 6 entities, 5 concepts, 23 register questions (21 open,
 2 deferred), 1 draft interview guide.
+
+## [2026-09-22] ingest | ICSC article on grocery formats, store growth and investment
+
+Sources in: `raw/icsc-grocery-formats-2026-04-24.md` → `sources/icsc-grocery-formats-2026.md`
+Pages touched: created `concepts/grocery-sector-trends.md` and
+`entities/gelsons.md`; edited `concepts/differentiation.md`,
+`concepts/expansion-strategy.md`, `analysis/open-questions.md`, `index.md`.
+Register: +1 open (Q24), 0 answered, +1 deferred (Q25)
+
+Notes: this is the first public source. It is a trade-press roundup that
+repeats figures from Consumer Edge, JLL, IBISWorld, Tillster, FMI, Forbes, and
+The Shelby Report. Several caveats are recorded on the source page: the
+article does not say what Trader Joe's "3% growth" measures, the Tillster
+figures are self-reported survey data from a vendor to restaurants, and the
+$11B figure is deal volume. Q22 is partly informed (Gelson's) but stays
+deferred. The interview guide was not regenerated, so it does not yet include
+Q24. Regenerate it on request.
+Wiki state: 2 sources, 7 entities, 6 concepts, 25 register questions (22 open,
+3 deferred), 1 draft interview guide.
+Lint: no broken links, no orphan pages (log.md has no inbound links, as before),
+every register origin lists its ID, and counts match the index (25 / 22 / 3).

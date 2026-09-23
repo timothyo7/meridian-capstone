@@ -19,6 +19,19 @@ next one.
   ([brief](../sources/client-brief.md)).
 - Results have been uneven across the resulting stores — see
   [Store performance variation](store-performance-variation.md).
+- The real estate market has changed. Grocery-anchored centers have vacancy
+  "well below the broader shopping center market" and "continue to command
+  rent premiums." Investment in them was almost $11 billion in 2025, up 42%
+  from 2024. Retail construction "has slowed considerably" ([ICSC, Apr 2026](../sources/icsc-grocery-formats-2026.md)).
+- Landlords are becoming more selective about anchors: "the days when any
+  grocery store could anchor a center equally well are fading" (JLL's Naveen
+  Jaggi) ([ICSC, Apr 2026](../sources/icsc-grocery-formats-2026.md)).
+- *Team inference:* this rests on the two points above and on Meridian's
+  past route of taking over vacated leases ([brief](../sources/client-brief.md)).
+  If grocery space is tight and landlords are picky about anchors, fewer
+  vacated leases may come up, they may cost more, and a landlord may ask
+  Meridian for evidence of performance. Both sources are national, so this is
+  untested for Meridian's counties.
 
 ## Tension worth naming
 
@@ -30,10 +43,11 @@ changes what the team should build.
 
 ## Open questions
 
-Q11–Q14 in the [register](../analysis/open-questions.md).
+Q11–Q14 and Q25 in the [register](../analysis/open-questions.md).
 
 ## Related pages
 
 - [Pasadena site](../entities/pasadena-site.md)
 - [Store network](../entities/store-network.md)
 - [Store performance variation](store-performance-variation.md)
+- [Grocery sector trends](grocery-sector-trends.md)

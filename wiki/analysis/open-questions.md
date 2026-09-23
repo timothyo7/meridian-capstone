@@ -49,6 +49,7 @@ the interview this table is the interview record.
 | Q16 | Which of the eight newer stores were taken-over leases, and do they behave differently from the original six? | Dana | [store-network](../entities/store-network.md) | Two populations in one dataset; pooling them would hide the real pattern | open |
 | Q17 | What drives operating cost differences between stores — labor, rent, shrink, something else? | Dana | [store-performance-variation](../concepts/store-performance-variation.md) | "Reduce operating costs" is a stated goal with no cost model behind it yet | open |
 | Q18 | Has the loyalty program ever been used for anything — promotions, segmentation, site selection? | Dana | [loyalty-program](../concepts/loyalty-program.md) | Determines whether this is greenfield or a repeat of work already tried and abandoned | open |
+| Q24 | Who does leadership see as Meridian's real competition: specialty grocers (Trader Joe's, Gelson's), traditional supermarkets, or restaurants for prepared-food occasions? | Dana | [differentiation](../concepts/differentiation.md) | Public sources show larger chains moving onto Meridian's claimed advantages; the answer sets the comparison set for any site or category analysis | open |
 
 ## Stakeholders & process
 
@@ -64,3 +65,4 @@ the interview this table is the interview record.
 |---|---|---|---|---|---|
 | Q22 | Who are the specialty grocery competitors in LA, Orange, and Ventura counties, and where do they operate? | research | [differentiation](../concepts/differentiation.md) | Answerable without Dana; needed before any trade-area claim | deferred |
 | Q23 | How does the Pasadena trade area compare demographically to existing store trade areas? | research | [pasadena-site](../entities/pasadena-site.md) | Public data can partly answer the Pasadena question independently of the client's view | deferred |
+| Q25 | In LA, Orange, and Ventura counties, how scarce and expensive is grocery-anchored space now, compared with when Meridian took over leases in the past five years? | research | [expansion-strategy](../concepts/expansion-strategy.md) | Nationally, grocery-anchored vacancy is low and rents are at a premium; if that holds locally, Meridian's past expansion route may not be repeatable | deferred |

@@ -3,18 +3,19 @@
 Catalog of every page. Read this first when answering a question, then drill in.
 Updated on every ingest.
 
-**Status:** 2 sources ingested · 7 entities · 6 concepts · 25 questions (22 open, 3 deferred)
+**Status:** 3 sources ingested · 7 entities · 6 concepts · 27 questions (23 open, 4 deferred)
 **Last updated:** 2026-09-22
 
 ## Analysis
 
-- [Open questions register](analysis/open-questions.md) — the system of record; 25 questions across five themes
+- [Open questions register](analysis/open-questions.md) — the system of record; 27 questions across five themes
 - [Interview guide](analysis/interview-guide.md) — draft, generated from the register for the Dana interview
 
 ## Sources
 
 - [Client brief](sources/client-brief.md) — Dana Okafor, August 2026; the engagement's founding document
 - [ICSC: new grocery formats, store growth and investment](sources/icsc-grocery-formats-2026.md) — trade press, April 2026; specialty grocers gaining share, smaller formats, and tight grocery-anchored real estate
+- [McKinsey's seven forces shaping 2026 grocery](sources/shelby-mckinsey-grocery-2026.md) — Shelby Report on McKinsey's State of Grocery 2026; price vs. volume, fresh and prepared foods, private label, loyalty personalization
 
 ## Entities
 
@@ -29,7 +30,7 @@ Updated on every ingest.
 ## Concepts
 
 - [Expansion strategy](concepts/expansion-strategy.md) — how sites have been chosen, and the confirmation-vs-evaluation tension
-- [Loyalty program](concepts/loyalty-program.md) — 40,000 members, never analyzed; Restricted data
+- [Loyalty program](concepts/loyalty-program.md) — 40,000 members, never analyzed; Restricted data; industry evidence on personalized offers
 - [Differentiation](concepts/differentiation.md) — prepared foods, local sourcing, smaller footprint
 - [Store performance variation](concepts/store-performance-variation.md) — uneven growth and its candidate explanations
 - [Engagement scope](concepts/engagement-scope.md) — the ask, the timeline, and what the brief leaves undefined

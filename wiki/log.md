@@ -93,3 +93,28 @@ Wiki state: 2 sources, 7 entities, 6 concepts, 25 register questions (22 open,
 3 deferred), 1 draft interview guide.
 Lint: no broken links, no orphan pages (log.md has no inbound links, as before),
 every register origin lists its ID, and counts match the index (25 / 22 / 3).
+
+## [2026-09-22] ingest | Shelby Report on McKinsey's State of Grocery North America 2026
+
+Sources in: `raw/shelby-mckinsey-grocery-forces-2026-09-14.md` → `sources/shelby-mckinsey-grocery-2026.md`
+Pages touched: edited `concepts/differentiation.md`,
+`concepts/grocery-sector-trends.md`, `concepts/loyalty-program.md`,
+`concepts/store-performance-variation.md`, `analysis/open-questions.md`,
+`index.md`.
+Register: +1 open (Q26), 0 answered, +1 deferred (Q27)
+
+Notes: this is the second public source, found by web search and not on the
+course list. It is a second-hand account: the Shelby Report summarizing a
+McKinsey webinar on the June 2026 report. The McKinsey page timed out and
+could not be read directly, so the figures are unverified against the
+original. Caveats are recorded on the source page: the 4.3× loyalty figure
+compares two groups rather than measuring an effect, and the executive
+percentages come from about 40 respondents. Loyalty content added to
+`loyalty-program.md` is public industry data only. No pages were created, and
+the interview guide was not regenerated, so Q24 and Q26 are not in it yet.
+Wiki state: 3 sources, 7 entities, 6 concepts, 27 register questions (23 open,
+4 deferred), 1 draft interview guide.
+Lint: no broken links, no new orphans (log.md as before), every register
+origin lists its ID, and counts match the index (27 / 23 / 4). No
+contradictions with the ICSC source: its Tillster figure and McKinsey's
+prepared-food figures point the same way but measure different things.

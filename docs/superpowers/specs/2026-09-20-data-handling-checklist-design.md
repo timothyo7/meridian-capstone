@@ -13,8 +13,7 @@ totals by store and week, and the store attributes, are explicitly cleared for
 use with those tools.
 
 The team needs that line turned into something it can actually follow while
-doing eight weeks of analysis — including at 11pm before a deliverable, which
-is when a rule that requires interpretation fails. The same document has to
+doing eight weeks of analysis. The same document has to
 stand up as a client-facing assurance artifact and as a Workshop 1
 deliverable.
 

@@ -173,3 +173,14 @@ more, but promoting Q24 or Q26 is left to the team. The
 header now records the four sources and the regeneration date.
 Wiki state: 4 sources, 8 entities, 6 concepts, 28 register questions (24 open,
 4 deferred), 1 draft interview guide, 1 filed answer.
+
+## [2026-09-22] review | McKinsey headline figures checked against the original
+
+Sources in: none
+Pages touched: `sources/shelby-mckinsey-grocery-2026.md`
+Register: +0 open, 0 answered, 0 deferred
+
+Notes: the team opened the McKinsey State of Grocery North America 2026 web
+page and confirmed the 1.2% sales, 2.2% price, and 1% volume figures match the
+Shelby Report. The source page now marks those three as verified. Nobody has
+checked the other figures against the original, and the page says so.

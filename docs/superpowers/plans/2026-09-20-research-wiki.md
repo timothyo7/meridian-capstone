@@ -33,6 +33,89 @@ query answer was filed as `wiki/analysis/where-specialty-grocers-are-opening.md`
 The draft interview guide was regenerated on 2026-09-22 to include the new
 Dana questions Q24, Q26, and Q28 (20 questions in total).
 
+## Review notes
+
+I reviewed three tasks after the build. Each note says what I asked for, how
+I checked it, and what I decided. All three check a research claim against
+its original source.
+
+### Review 1. Ingest the ICSC article (Workshop 01 step 6)
+
+#### What I asked the AI to do
+
+- I asked Claude to ingest ICSC's April 24, 2026 article on grocery formats
+  and store growth.
+- It saved the full text to `raw/`, wrote a source page, created pages for
+  grocery sector trends and Gelson's, updated two concept pages, and added Q24
+  and Q25 to the register.
+- It flagged that the article never says what Trader Joe's 3% growth
+  measures.
+
+#### How I checked its work
+
+- I opened the original article next to the source page and found the
+  passage under "Specialty Grocers Gain Momentum With Shoppers."
+- The article says Trader Joe's grew 3% year over year for the period that
+  ended Feb. 28 and beat the sector by 6 percentage points. It never says if
+  that means sales, visits, or transactions. It never names the year either.
+- The wiki page states all of this correctly.
+
+#### What I decided
+
+- Accepted, with the caveat. The figure stays on the page and stays flagged.
+  I won't use it as a sales number or compare it with Meridian's sales,
+  because the source doesn't support that.
+
+### Review 2. Ingest the Shelby Report on McKinsey (Workshop 01 step 7)
+
+#### What I asked the AI to do
+
+- I asked Claude to find a recent, relevant source that isn't on the course
+  list. It recommended the Shelby Report's September 14, 2026 summary of
+  McKinsey's State of Grocery North America 2026, and I asked it to ingest
+  that.
+- Claude couldn't open the McKinsey page because it timed out. So the source
+  page said every figure came secondhand through the Shelby Report and nobody
+  had checked it.
+
+#### How I checked its work
+
+- I opened the McKinsey web page in my browser and checked the headline
+  figures. U.S. grocery sales grew 1.2% in 2025, prices rose 2.2%, and
+  volumes fell 1%.
+- All three matched the wiki.
+
+#### What I decided
+
+- Accepted, and I asked Claude to mark those three figures as verified on the
+  source page.
+- I only checked those three. The rest, like the 4.3x loyalty spend, still
+  come through the Shelby Report, and the page still says so.
+
+### Review 3. Ingest the Sprouts article (homework source)
+
+#### What I asked the AI to do
+
+- I asked Claude to ingest the March 11, 2026 Colorado Boulevard article on
+  Sprouts coming to Pasadena and Highland Park.
+- It created a Sprouts page, updated the Pasadena site page, and added Q28 to
+  the register.
+
+#### How I checked its work
+
+- I read the original article. The Pasadena store rests on a public notice at
+  the former Rite Aid at 1421 E. Washington Blvd. The article says "if
+  approved" and gives no opening date. So the store is pending, not confirmed.
+- Highland Park is firmer. The article says Sprouts signed a lease at 6235
+  York Blvd. and expects to open in 2027.
+- The wiki gets both right.
+
+#### What I decided
+
+- Accepted as written. The wiki already calls the Pasadena store pending and
+  never says it's confirmed.
+- Q28 stays as my question for Dana in Workshop 2.
+
 ## Global Constraints
 
 - **No restricted data, ever.** Nothing under `MERIDIAN_DATA_ROOT`, and no loyalty, labor, or row-level POS content, may enter `wiki/` or `raw/`. The wiki is written by an AI tool and is Shareable-class by construction (spec D7, and `docs/superpowers/specs/2026-09-20-data-handling-checklist-design.md`).

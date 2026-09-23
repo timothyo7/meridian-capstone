@@ -13,15 +13,19 @@ presented it. The report was released in June 2026. It draws on a March
 survey of nearly 5,000 grocery shoppers and an April survey of more than 40
 grocery executives in the U.S. and Canada. It groups the industry around
 seven forces: value, private brands, fresh, wellness, e-commerce, retail
-media, and AI. **This is a second-hand account.** The McKinsey page itself
-could not be retrieved, so every figure here is McKinsey's as the Shelby
-Report tells it. Nothing in the article is about Meridian.
+media, and AI. **This is a secondhand account.** Claude could not retrieve the McKinsey
+page (it timed out), so the figures here are McKinsey's as the Shelby Report
+tells it. **On 2026-09-22 the team checked the headline figures against the
+McKinsey web page and they matched:** sales up 1.2%, prices up 2.2%, and
+volumes down 1% in 2025. Nobody has checked the other figures against the
+original. Nothing in the article is about Meridian.
 
 ## Key claims
 
 Market:
 - U.S. grocery sales grew 1.2% in 2025. Prices rose 2.2% and volumes fell
   1%: "a market that grew in dollars as shoppers bought fewer units."
+  Verified by the team against the McKinsey web page on 2026-09-22.
 - Units per trip fell in every channel except drug over the 12 months ended
   June 2026, and how often shoppers buy has started to decline.
 - More than half of shoppers say they are cutting impulse purchases. About

@@ -10,6 +10,29 @@
 
 **Spec:** `docs/superpowers/specs/2026-09-20-research-wiki-design.md`
 
+## Status
+
+**All 9 tasks complete** (built 2026-09-20, executed inline one task at a time).
+
+| Task | Status | Commit(s) |
+|---|---|---|
+| 1. Scaffold the wiki and point Claude at it | done | `b995159` |
+| 2. Write the schema | done | `cf74d00` |
+| 3. Ingest the client brief as source #1 | done | `17334df`, sourcing fix `1a40fd0` |
+| 4. Create the entity pages | done | `878f9af` |
+| 5. Create the concept pages | done | `d5175c4`, fix `a38f6b1` |
+| 6. Seed the register | done | `5056683` |
+| 7. Write the index and the log | done | `ac666d3` |
+| 8. Generate the draft interview guide | done | `b38bd8d` |
+| 9. Lint pass and handoff | done | `b210e73`, `d16307f`; final-review fixes `d30ee6a`, `b0f0054`, `3cb4358` |
+
+**After the build (outside this plan, Workshop 01 steps 6–8, 2026-09-22):**
+three public sources were ingested (ICSC, April 2026; Shelby Report on
+McKinsey, September 2026; Colorado Boulevard on Sprouts, March 2026), and one
+query answer was filed as `wiki/analysis/where-specialty-grocers-are-opening.md`.
+The draft interview guide has not been regenerated since the build, so it does
+not include the new Dana questions Q24, Q26, and Q28.
+
 ## Global Constraints
 
 - **No restricted data, ever.** Nothing under `MERIDIAN_DATA_ROOT`, and no loyalty, labor, or row-level POS content, may enter `wiki/` or `raw/`. The wiki is written by an AI tool and is Shareable-class by construction (spec D7, and `docs/superpowers/specs/2026-09-20-data-handling-checklist-design.md`).
@@ -35,14 +58,14 @@
 - Consumes: nothing.
 - Produces: the directory layout every later task writes into; the root pointer that makes Claude open `wiki/CLAUDE.md` in future sessions.
 
-- [ ] **Step 1: Create the directory skeleton**
+- [x] **Step 1: Create the directory skeleton**
 
 ```bash
 mkdir -p wiki/sources wiki/entities wiki/concepts wiki/analysis
 touch wiki/sources/.gitkeep wiki/entities/.gitkeep wiki/concepts/.gitkeep wiki/analysis/.gitkeep
 ```
 
-- [ ] **Step 2: Write the root pointer**
+- [x] **Step 2: Write the root pointer**
 
 Create `CLAUDE.md` at the repo root with exactly this content:
 
@@ -65,7 +88,7 @@ No client data classified Restricted may enter this repository or any AI tool.
 See `docs/superpowers/specs/2026-09-20-data-handling-checklist-design.md`.
 ```
 
-- [ ] **Step 3: Verify the structure**
+- [x] **Step 3: Verify the structure**
 
 Run:
 
@@ -84,7 +107,7 @@ wiki/sources
 root pointer present
 ```
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add wiki CLAUDE.md
@@ -106,7 +129,7 @@ git commit -m "Scaffold research wiki directories and root pointer"
 - Consumes: the directory layout from Task 1.
 - Produces: the page formats and workflow definitions every later task follows. Tasks 3–9 are each an application of a rule written here.
 
-- [ ] **Step 1: Write `wiki/CLAUDE.md`**
+- [x] **Step 1: Write `wiki/CLAUDE.md`**
 
 Create the file with exactly this content:
 
@@ -268,7 +291,7 @@ one-line summary. Updated on every ingest.
 `grep "^## \[" wiki/log.md | tail -5` shows recent history.
 ````
 
-- [ ] **Step 2: Verify the schema is complete and self-consistent**
+- [x] **Step 2: Verify the schema is complete and self-consistent**
 
 Run:
 
@@ -278,7 +301,7 @@ grep -c "^## " wiki/CLAUDE.md && grep -n "Restricted\|wikilink\|deferred" wiki/C
 
 Expected: at least 8 `##` sections, and hits showing the Restricted rule, the wikilink prohibition, and the `deferred` default are all present.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add wiki/CLAUDE.md
@@ -301,13 +324,13 @@ git commit -m "Add wiki schema with page formats, workflows, and data rule"
 - Consumes: the source page format from Task 2.
 - Produces: `sources/client-brief.md`, the page every entity and concept claim in Tasks 4 and 5 links back to.
 
-- [ ] **Step 1: Re-read the source**
+- [x] **Step 1: Re-read the source**
 
 ```bash
 cat raw/client-brief.md
 ```
 
-- [ ] **Step 2: Write the source page**
+- [x] **Step 2: Write the source page**
 
 Create `wiki/sources/client-brief.md`:
 
@@ -393,7 +416,7 @@ ranking them, and describes the requested artifact (a dashboard) rather than the
 decision it serves. Seeded into the register as Q1–Q23.
 ```
 
-- [ ] **Step 3: Verify**
+- [x] **Step 3: Verify**
 
 Run:
 
@@ -403,7 +426,7 @@ head -5 wiki/sources/client-brief.md && grep -c "^## " wiki/sources/client-brief
 
 Expected: frontmatter with `source:`, `ingested: 2026-09-20`, `type: client-document`, and `4` top-level sections.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add wiki/sources/client-brief.md
@@ -426,7 +449,7 @@ git commit -m "Ingest client brief as wiki source #1"
 - Consumes: `sources/client-brief.md` from Task 3; the entity page format from Task 2.
 - Produces: the six entity pages that register rows in Task 6 cite as origins.
 
-- [ ] **Step 1: Write `wiki/entities/dana-okafor.md` in full**
+- [x] **Step 1: Write `wiki/entities/dana-okafor.md` in full**
 
 This is the worked example — every other entity page follows this exact shape.
 
@@ -465,7 +488,7 @@ Tracked in the [register](../analysis/open-questions.md) as Q1–Q4, Q11–Q21.
 - [Engagement scope](../concepts/engagement-scope.md)
 ```
 
-- [ ] **Step 2: Write `wiki/entities/marcus.md`**
+- [x] **Step 2: Write `wiki/entities/marcus.md`**
 
 Same structure. Required content — every bullet cites
 `../sources/client-brief.md`:
@@ -480,7 +503,7 @@ Note on the page, under `Open questions`, that Marcus is the only named route
 to the data and the team knows nothing else about him — that gap is itself the
 reason Q5–Q8 exist.
 
-- [ ] **Step 3: Write `wiki/entities/meridian-leadership.md`**
+- [x] **Step 3: Write `wiki/entities/meridian-leadership.md`**
 
 Required content, each bullet citing the brief:
 
@@ -491,7 +514,7 @@ Required content, each bullet citing the brief:
 - Related: [Dana Okafor](dana-okafor.md), [Expansion strategy](../concepts/expansion-strategy.md).
 - Open questions: Q2, Q19, Q20.
 
-- [ ] **Step 4: Write `wiki/entities/store-network.md`**
+- [x] **Step 4: Write `wiki/entities/store-network.md`**
 
 Required content, each bullet citing the brief:
 
@@ -508,7 +531,7 @@ Required content, each bullet citing the brief:
   [Pasadena site](pasadena-site.md).
 - Open questions: Q15, Q16, Q17.
 
-- [ ] **Step 5: Write `wiki/entities/pasadena-site.md`**
+- [x] **Step 5: Write `wiki/entities/pasadena-site.md`**
 
 Required content:
 
@@ -525,7 +548,7 @@ Add a short `## Why this page matters` section stating plainly that this entity
 is the engagement's central assumption and the wiki's job is to keep the
 evidence for and against it in one place.
 
-- [ ] **Step 6: Write `wiki/entities/pos-system.md`**
+- [x] **Step 6: Write `wiki/entities/pos-system.md`**
 
 Required content:
 
@@ -539,7 +562,7 @@ Required content:
 - Related: [Marcus](marcus.md), [Engagement scope](../concepts/engagement-scope.md).
 - Open questions: Q5, Q6, Q10.
 
-- [ ] **Step 7: Remove the placeholder and verify**
+- [x] **Step 7: Remove the placeholder and verify**
 
 ```bash
 rm wiki/entities/.gitkeep
@@ -548,7 +571,7 @@ ls wiki/entities/ && grep -L "sources/client-brief.md" wiki/entities/*.md
 
 Expected: six `.md` files listed, and the `grep -L` prints nothing — meaning every entity page cites the source at least once.
 
-- [ ] **Step 8: Commit**
+- [x] **Step 8: Commit**
 
 ```bash
 git add wiki/entities
@@ -571,7 +594,7 @@ git commit -m "Add entity pages seeded from the client brief"
 - Consumes: `sources/client-brief.md` (Task 3), entity pages (Task 4), the concept page format (Task 2).
 - Produces: the five concept pages cited as origins by register rows in Task 6.
 
-- [ ] **Step 1: Write `wiki/concepts/expansion-strategy.md` in full**
+- [x] **Step 1: Write `wiki/concepts/expansion-strategy.md` in full**
 
 The worked example for this task.
 
@@ -616,7 +639,7 @@ Q11–Q14 in the [register](../analysis/open-questions.md).
 - [Store performance variation](store-performance-variation.md)
 ```
 
-- [ ] **Step 2: Write `wiki/concepts/loyalty-program.md`**
+- [x] **Step 2: Write `wiki/concepts/loyalty-program.md`**
 
 Required content, each claim citing the brief:
 
@@ -631,7 +654,7 @@ Required content, each claim citing the brief:
 - Open questions: Q18, and Q22 as deferred research.
 - Related: [Engagement scope](engagement-scope.md), [Differentiation](differentiation.md).
 
-- [ ] **Step 3: Write `wiki/concepts/differentiation.md`**
+- [x] **Step 3: Write `wiki/concepts/differentiation.md`**
 
 Required content:
 
@@ -642,7 +665,7 @@ Required content:
 - Open questions: Q22 (deferred, research into the competitive set).
 - Related: [Expansion strategy](expansion-strategy.md), [Loyalty program](loyalty-program.md).
 
-- [ ] **Step 4: Write `wiki/concepts/store-performance-variation.md`**
+- [x] **Step 4: Write `wiki/concepts/store-performance-variation.md`**
 
 Required content:
 
@@ -656,7 +679,7 @@ Required content:
 - Open questions: Q15, Q16, Q17, and Q23 as deferred research.
 - Related: [Store network](../entities/store-network.md), [Expansion strategy](expansion-strategy.md).
 
-- [ ] **Step 5: Write `wiki/concepts/engagement-scope.md`**
+- [x] **Step 5: Write `wiki/concepts/engagement-scope.md`**
 
 Required content:
 
@@ -673,7 +696,7 @@ Required content:
 - Related: [Dana Okafor](../entities/dana-okafor.md),
   [Meridian leadership and board](../entities/meridian-leadership.md).
 
-- [ ] **Step 6: Remove the placeholder and verify**
+- [x] **Step 6: Remove the placeholder and verify**
 
 ```bash
 rm wiki/concepts/.gitkeep
@@ -682,7 +705,7 @@ ls wiki/concepts/ && grep -L "sources/client-brief.md" wiki/concepts/*.md
 
 Expected: five `.md` files, and `grep -L` prints nothing.
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 ```bash
 git add wiki/concepts
@@ -704,7 +727,7 @@ git commit -m "Add concept pages seeded from the client brief"
 - Consumes: entity pages (Task 4) and concept pages (Task 5) as origins; the register format from Task 2.
 - Produces: the register — the system of record that Task 8's interview guide is generated from. Question IDs Q1–Q23 are referenced by every page written in Tasks 4 and 5.
 
-- [ ] **Step 1: Write the register**
+- [x] **Step 1: Write the register**
 
 Create `wiki/analysis/open-questions.md`:
 
@@ -777,7 +800,7 @@ the interview this table is the interview record.
 | Q23 | How does the Pasadena trade area compare demographically to existing store trade areas? | research | [store-performance-variation](../concepts/store-performance-variation.md) | Public data can partly answer the Pasadena question independently of the client's view | deferred |
 ```
 
-- [ ] **Step 2: Verify the register's shape**
+- [x] **Step 2: Verify the register's shape**
 
 Run:
 
@@ -789,7 +812,7 @@ grep -c "^## " wiki/analysis/open-questions.md
 
 Expected: `23` question rows; `2` deferred rows; `6` sections (five themes plus Deferred).
 
-- [ ] **Step 3: Verify no question is owned by research or team while still `open`**
+- [x] **Step 3: Verify no question is owned by research or team while still `open`**
 
 ```bash
 grep "^| Q" wiki/analysis/open-questions.md | grep "| research \|| team " | grep -v "deferred" || echo "OK: no research/team rows left open"
@@ -797,7 +820,7 @@ grep "^| Q" wiki/analysis/open-questions.md | grep "| research \|| team " | grep
 
 Expected: `OK: no research/team rows left open`
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add wiki/analysis/open-questions.md
@@ -819,7 +842,7 @@ git commit -m "Seed question register with 23 questions across five themes"
 - Consumes: every page created in Tasks 3–6.
 - Produces: the catalog a future session reads first when answering a query, and the chronological record every later ingest appends to.
 
-- [ ] **Step 1: Write `wiki/index.md`**
+- [x] **Step 1: Write `wiki/index.md`**
 
 ```markdown
 # Wiki index
@@ -857,7 +880,7 @@ Updated on every ingest.
 - [Engagement scope](concepts/engagement-scope.md) — the ask, the timeline, and what the brief leaves undefined
 ```
 
-- [ ] **Step 2: Write `wiki/log.md`**
+- [x] **Step 2: Write `wiki/log.md`**
 
 ```markdown
 # Wiki log
@@ -882,7 +905,7 @@ Notes: first build. The wiki is ready to accept external research. The guide is
 marked draft and should be regenerated once research sources land.
 ```
 
-- [ ] **Step 3: Verify**
+- [x] **Step 3: Verify**
 
 ```bash
 grep "^## \[" wiki/log.md
@@ -891,7 +914,7 @@ grep -o "](\([a-z]*\)/[a-z-]*\.md)" wiki/index.md | wc -l
 
 Expected: one log entry line matching the prefix format, and `14` — one source, six entities, five concepts, the register, and the guide.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add wiki/index.md wiki/log.md
@@ -914,7 +937,7 @@ git commit -m "Add wiki index and log with first ingest entry"
 - Consumes: the register from Task 6 — rows with owner `Dana` and status `open` only.
 - Produces: the engagement deliverable. Regenerated from the register whenever the register changes.
 
-- [ ] **Step 1: Extract the qualifying rows**
+- [x] **Step 1: Extract the qualifying rows**
 
 ```bash
 grep "^| Q" wiki/analysis/open-questions.md | grep "| Dana |" | grep "| open |" | wc -l
@@ -922,7 +945,7 @@ grep "^| Q" wiki/analysis/open-questions.md | grep "| Dana |" | grep "| open |" 
 
 Expected: `17` — Q1–Q4, Q9–Q21 minus the Marcus-owned rows (Q5–Q8). These 17 are the guide's content; Q5–Q8 (Marcus) and Q22–Q23 (research) are excluded.
 
-- [ ] **Step 2: Write the guide**
+- [x] **Step 2: Write the guide**
 
 ```markdown
 # Interview guide — Dana Okafor
@@ -1016,7 +1039,7 @@ specifics, those notes go to restricted storage outside this repository — not
 into the wiki.
 ```
 
-- [ ] **Step 3: Verify every guide question exists in the register**
+- [x] **Step 3: Verify every guide question exists in the register**
 
 ```bash
 rm -f wiki/analysis/.gitkeep
@@ -1027,7 +1050,7 @@ done; echo "cross-check complete"
 
 Expected: `cross-check complete` with no MISSING lines.
 
-- [ ] **Step 4: Verify no Marcus or research question leaked in**
+- [x] **Step 4: Verify no Marcus or research question leaked in**
 
 ```bash
 grep -E "^- \*{0,2}Q(5|6|7|8|22|23) " wiki/analysis/interview-guide.md || echo "OK: no out-of-scope questions in guide"
@@ -1035,7 +1058,7 @@ grep -E "^- \*{0,2}Q(5|6|7|8|22|23) " wiki/analysis/interview-guide.md || echo "
 
 Expected: `OK: no out-of-scope questions in guide`
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add wiki/analysis/interview-guide.md
@@ -1058,7 +1081,7 @@ git commit -m "Generate draft interview guide from the register"
 - Consumes: the whole wiki.
 - Produces: a clean first build and a log entry recording the lint.
 
-- [ ] **Step 1: Check every relative link resolves**
+- [x] **Step 1: Check every relative link resolves**
 
 ```bash
 cd wiki && for f in $(find . -name "*.md"); do
@@ -1071,7 +1094,7 @@ done; cd ..; echo "link check complete"
 
 Expected: `link check complete` with no BROKEN lines. Fix any that appear — the most likely cause is a filename that drifted from what `sources/client-brief.md` promised in "What it changes".
 
-- [ ] **Step 2: Check for orphan pages**
+- [x] **Step 2: Check for orphan pages**
 
 ```bash
 cd wiki && for f in $(find entities concepts -name "*.md"); do
@@ -1083,7 +1106,7 @@ done; cd ..; echo "orphan check complete"
 
 Expected: no ORPHAN lines. Every entity and concept page should be reachable from `index.md` at minimum.
 
-- [ ] **Step 3: Check every page is in the index**
+- [x] **Step 3: Check every page is in the index**
 
 ```bash
 cd wiki && for f in $(find sources entities concepts analysis -name "*.md"); do
@@ -1093,7 +1116,7 @@ done; cd ..; echo "index check complete"
 
 Expected: no output before `index check complete`.
 
-- [ ] **Step 4: Review by hand for the checks a script cannot do**
+- [x] **Step 4: Review by hand for the checks a script cannot do**
 
 Read the wiki and look for:
 - Contradictions between pages.
@@ -1103,7 +1126,7 @@ Read the wiki and look for:
 
 Report findings rather than silently resolving anything that requires judgment.
 
-- [ ] **Step 5: Append the lint entry to `wiki/log.md`**
+- [x] **Step 5: Append the lint entry to `wiki/log.md`**
 
 ```markdown
 ## [2026-09-20] lint | first build
@@ -1115,7 +1138,7 @@ Wiki state: 1 source, 6 entities, 5 concepts, 23 register questions (21 open,
 2 deferred), 1 draft interview guide.
 ```
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add wiki

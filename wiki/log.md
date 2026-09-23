@@ -139,3 +139,20 @@ Wiki state: 4 sources, 8 entities, 6 concepts, 28 register questions (24 open,
 Lint: no broken links, no new orphans (log.md as before), every register
 origin lists its ID, and counts match the index (28 / 24 / 4). No
 contradictions with earlier sources.
+
+## [2026-09-22] query | where specialty grocers are opening
+
+Sources in: none (answered from the four ingested sources)
+Pages touched: created `analysis/where-specialty-grocers-are-opening.md`;
+edited `index.md`.
+Register: +0 open, 0 answered, 0 deferred
+
+Notes: filed the answer to "What do our sources say about where specialty
+grocers are opening?" with a citation on every claim and three labeled team
+inferences. The sources name only a few places (Sprouts in Pasadena and
+Highland Park, Gelson's in Santa Ana and Costa Mesa, a Whole Foods-anchored
+center in Redlands); most of the evidence is about patterns. Gaps are recorded
+on the page: nothing on Ventura County, and no local count of openings (Q22).
+Q28 is kept as the question for Dana for Workshop 2.
+Wiki state: 4 sources, 8 entities, 6 concepts, 28 register questions (24 open,
+4 deferred), 1 draft interview guide, 1 filed answer.

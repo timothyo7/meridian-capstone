@@ -10,6 +10,7 @@ Updated on every ingest.
 
 - [Open questions register](analysis/open-questions.md) — the system of record; 28 questions across five themes
 - [Interview guide](analysis/interview-guide.md) — draft, generated from the register for the Dana interview
+- [Where specialty grocers are opening](analysis/where-specialty-grocers-are-opening.md) — filed answer, 2026-09-22; Sprouts in Pasadena and Highland Park, Gelson's in Orange County, and the patterns and gaps across all four sources
 
 ## Sources
 

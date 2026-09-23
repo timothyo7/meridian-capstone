@@ -1,12 +1,15 @@
 # Interview guide — Dana Okafor
 
-> **Draft.** Generated from the [register](open-questions.md) on 2026-09-20,
-> when the wiki held a single source: the client brief. It will be regenerated
-> once external research is ingested. Do not treat this as the finished plan.
+> **Draft.** Regenerated from the [register](open-questions.md) on 2026-09-22,
+> when the wiki held four sources: the client brief and three public sources
+> (ICSC, Shelby/McKinsey, and Colorado Boulevard on Sprouts). The first version
+> was generated on 2026-09-20 from the brief alone. Do not treat this as the
+> finished plan.
 
-Includes register rows owned by Dana with status `open` — 17 questions.
-Questions for Marcus (Q5–Q8) are held for a separate IT conversation; research
-questions (Q22–Q23) are answerable without Dana.
+Includes register rows owned by Dana with status `open`: 20 questions, up from
+17 with the addition of Q24, Q26, and Q28. Questions for Marcus (Q5–Q8) are
+held for a separate IT conversation. Research and team questions (Q22, Q23,
+Q25, Q27) can be answered without Dana.
 
 Grouped by theme, not ranked globally — the conversation should flow by topic.
 **Bolded questions are the ones that survive if the meeting is cut short.**
@@ -44,7 +47,9 @@ answer.*
 
 *Opening: handle with care. The brief states Pasadena is the obvious next step
 and asks for data to back it up. The goal here is to understand the existing
-reasoning, not to challenge it in the room.*
+reasoning, not to challenge it in the room. Public sources now show Sprouts
+moving into the same area, so ask about competition as a question, not a
+warning.*
 
 - **Q12 — What makes Pasadena obvious to leadership? What do you already know
   that points there?** ([expansion-strategy](../concepts/expansion-strategy.md))
@@ -52,13 +57,19 @@ reasoning, not to challenge it in the room.*
   exploratory?** ([pasadena-site](../entities/pasadena-site.md))
 - **Q13 — What would have to be true for you to decide against it?**
   ([expansion-strategy](../concepts/expansion-strategy.md))
+- Q28 — Sprouts already has a store in East Pasadena and may open its first
+  one inside the city, in the former Rite Aid on East Washington Boulevard. Was
+  that on your radar, and where is your site relative to it?
+  ([pasadena-site](../entities/pasadena-site.md))
 - Q14 — Are there other candidate sites we should be evaluating Pasadena
   against? ([pasadena-site](../entities/pasadena-site.md))
 
 ## 4. Business & operations
 
 *Opening: the brief says growth has been uneven but does not say which stores
-or why. Leadership's read is a useful check on whatever the data shows.*
+or why. Leadership's read is a useful check on whatever the data shows. The
+last two questions test Meridian's claimed advantages against what larger
+chains are now doing.*
 
 - **Q15 — Which stores do you consider the successes, and which have been
   slower?** ([store-performance-variation](../concepts/store-performance-variation.md))
@@ -69,6 +80,12 @@ or why. Leadership's read is a useful check on whatever the data shows.*
   shrink? ([store-performance-variation](../concepts/store-performance-variation.md))
 - Q18 — Has the loyalty data ever been used for anything — promotions,
   segmentation, site selection? ([loyalty-program](../concepts/loyalty-program.md))
+- Q24 — Who do you see as your real competition: specialty grocers like Trader
+  Joe's or Gelson's, traditional supermarkets, or restaurants competing for
+  prepared-food occasions? ([differentiation](../concepts/differentiation.md))
+- Q26 — Do you sell any owned-brand or private-label products? And how much
+  do prepared foods contribute to sales and margin?
+  ([differentiation](../concepts/differentiation.md))
 
 ## 5. Stakeholders & process
 

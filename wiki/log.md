@@ -156,3 +156,20 @@ on the page: nothing on Ventura County, and no local count of openings (Q22).
 Q28 is kept as the question for Dana for Workshop 2.
 Wiki state: 4 sources, 8 entities, 6 concepts, 28 register questions (24 open,
 4 deferred), 1 draft interview guide, 1 filed answer.
+
+## [2026-09-22] guide | regenerate interview guide with Q24, Q26, Q28
+
+Sources in: none
+Pages touched: `analysis/interview-guide.md`
+Register: +0 open, 0 answered, 0 deferred
+
+Notes: regenerated from the register's 20 Dana-owned open rows (was 17).
+Q28 was added to "The Pasadena assumption" after Q13, and Q24 and Q26 to
+"Business & operations" after Q18. The framing sentences for those two themes
+were updated to mention the new public evidence. The short-meeting (bold)
+questions are unchanged. Q28 is unbolded because "The Pasadena assumption"
+already has three bold questions. "Business & operations" has room for one
+more, but promoting Q24 or Q26 is left to the team. The
+header now records the four sources and the regeneration date.
+Wiki state: 4 sources, 8 entities, 6 concepts, 28 register questions (24 open,
+4 deferred), 1 draft interview guide, 1 filed answer.

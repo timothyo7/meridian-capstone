@@ -30,8 +30,8 @@
 three public sources were ingested (ICSC, April 2026; Shelby Report on
 McKinsey, September 2026; Colorado Boulevard on Sprouts, March 2026), and one
 query answer was filed as `wiki/analysis/where-specialty-grocers-are-opening.md`.
-The draft interview guide has not been regenerated since the build, so it does
-not include the new Dana questions Q24, Q26, and Q28.
+The draft interview guide was regenerated on 2026-09-22 to include the new
+Dana questions Q24, Q26, and Q28 (20 questions in total).
 
 ## Global Constraints
 

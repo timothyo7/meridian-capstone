@@ -59,3 +59,4 @@ deferred research into the competitive set.
 - [Loyalty program](loyalty-program.md)
 - [Grocery sector trends](grocery-sector-trends.md)
 - [Gelson's](../entities/gelsons.md)
+- [Sprouts Farmers Market](../entities/sprouts.md)

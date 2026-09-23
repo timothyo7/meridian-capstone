@@ -40,6 +40,7 @@ the interview this table is the interview record.
 | Q12 | What makes Pasadena "obvious" to leadership — what evidence exists today? | Dana | [expansion-strategy](../concepts/expansion-strategy.md) | Surfaces the implicit model leadership is already using, which the analysis must either support or contradict | open |
 | Q13 | What would have to be true for leadership to decide against Pasadena? | Dana | [expansion-strategy](../concepts/expansion-strategy.md) | If nothing would, the engagement is confirmation and should be renegotiated | open |
 | Q14 | Are there other candidate sites Pasadena should be evaluated against? | Dana | [pasadena-site](../entities/pasadena-site.md) | A single-site question is a go/no-go; a multi-site question is a ranking, and they need different methods | open |
+| Q28 | Is leadership aware that Sprouts may open its first store inside Pasadena (former Rite Aid, 1421 E. Washington Blvd.) and already has one in East Pasadena? Where is Meridian's site relative to them? | Dana | [pasadena-site](../entities/pasadena-site.md) | A specialty competitor entering the same trade area could strengthen or weaken the case for Pasadena, and Dana's answer shows whether competition was part of the "obvious" judgment | open |
 
 ## Business & operations
 

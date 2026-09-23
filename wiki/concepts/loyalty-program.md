@@ -24,7 +24,10 @@ Industry context (public data, nothing about Meridian's members):
 - Loyalty members who redeem personalized offers spend 4.3× more a year than
   members who don't ([Shelby/McKinsey, Sep 2026](../sources/shelby-mckinsey-grocery-2026.md)). This compares two groups; it does not show that the
   offers caused the extra spending.
-- *Team inference:* this rests on the two points above and on Dana's remark
+- [Sprouts](../entities/sprouts.md), which is expanding in the Pasadena
+  area, has highlighted "efforts to gather deeper customer insights through
+  the chain's loyalty program" ([Colorado Boulevard, Mar 2026](../sources/sprouts-pasadena-2026.md)).
+- *Team inference:* this rests on the two McKinsey points above and on Dana's remark
   that the data has never been used. An unused program of about 40,000
   members is a gap by industry standards. That makes Q18 worth asking, even
   though any analysis of the members themselves stays Restricted.

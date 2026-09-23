@@ -3,12 +3,12 @@
 Catalog of every page. Read this first when answering a question, then drill in.
 Updated on every ingest.
 
-**Status:** 3 sources ingested · 7 entities · 6 concepts · 27 questions (23 open, 4 deferred)
+**Status:** 4 sources ingested · 8 entities · 6 concepts · 28 questions (24 open, 4 deferred)
 **Last updated:** 2026-09-22
 
 ## Analysis
 
-- [Open questions register](analysis/open-questions.md) — the system of record; 27 questions across five themes
+- [Open questions register](analysis/open-questions.md) — the system of record; 28 questions across five themes
 - [Interview guide](analysis/interview-guide.md) — draft, generated from the register for the Dana interview
 
 ## Sources
@@ -16,6 +16,7 @@ Updated on every ingest.
 - [Client brief](sources/client-brief.md) — Dana Okafor, August 2026; the engagement's founding document
 - [ICSC: new grocery formats, store growth and investment](sources/icsc-grocery-formats-2026.md) — trade press, April 2026; specialty grocers gaining share, smaller formats, and tight grocery-anchored real estate
 - [McKinsey's seven forces shaping 2026 grocery](sources/shelby-mckinsey-grocery-2026.md) — Shelby Report on McKinsey's State of Grocery 2026; price vs. volume, fresh and prepared foods, private label, loyalty personalization
+- [Sprouts expanding to Pasadena and Highland Park](sources/sprouts-pasadena-2026.md) — local news, March 2026; Sprouts named on a notice at a former Rite Aid in Pasadena, and a lease in Highland Park
 
 ## Entities
 
@@ -25,6 +26,7 @@ Updated on every ingest.
 - [Store network](entities/store-network.md) — fourteen stores, ~$78M, ~620 employees, three counties
 - [Pasadena site](entities/pasadena-site.md) — the presumed next location; the engagement's central assumption
 - [Gelson's](entities/gelsons.md) — Southern California grocer with 27 stores that is testing small-format micromarkets in Orange County
+- [Sprouts Farmers Market](entities/sprouts.md) — national specialty grocer entering Pasadena city limits and taking over vacated Rite Aid and 99 Cents Only stores
 - [POS system](entities/pos-system.md) — migrated last spring (per the August 2026 brief); three years of history spanning the change
 
 ## Concepts

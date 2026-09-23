@@ -118,3 +118,24 @@ Lint: no broken links, no new orphans (log.md as before), every register
 origin lists its ID, and counts match the index (27 / 23 / 4). No
 contradictions with the ICSC source: its Tillster figure and McKinsey's
 prepared-food figures point the same way but measure different things.
+
+## [2026-09-22] ingest | Colorado Boulevard on Sprouts expanding to Pasadena and Highland Park
+
+Sources in: `raw/sprouts-pasadena-highland-park-2026-03-11.md` → `sources/sprouts-pasadena-2026.md`
+Pages touched: created `entities/sprouts.md`; edited
+`entities/pasadena-site.md`, `concepts/expansion-strategy.md`,
+`concepts/loyalty-program.md`, `concepts/differentiation.md` (related link),
+`analysis/open-questions.md`, `index.md`.
+Register: +1 open (Q28), 0 answered, 0 deferred
+
+Notes: this is the third public source, and the first about Pasadena itself.
+It is short local news reporting a posted notice, so the Pasadena store is
+pending, not confirmed; the article does not say what the application is for
+or when the store would open. The Highland Park lease is reported as signed.
+Q22 and Q25 are partly informed but stay deferred. The interview guide still
+has not been regenerated, so Q24, Q26, and Q28 are not in it.
+Wiki state: 4 sources, 8 entities, 6 concepts, 28 register questions (24 open,
+4 deferred), 1 draft interview guide.
+Lint: no broken links, no new orphans (log.md as before), every register
+origin lists its ID, and counts match the index (28 / 24 / 4). No
+contradictions with earlier sources.

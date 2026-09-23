@@ -32,6 +32,15 @@ next one.
   vacated leases may come up, they may cost more, and a landlord may ask
   Meridian for evidence of performance. Both sources are national, so this is
   untested for Meridian's counties.
+- Locally, a specialty grocer is taking over vacated stores from exiting
+  chains. [Sprouts](../entities/sprouts.md) is named on a change-of-ownership
+  notice at a former Rite Aid in Pasadena, and has signed a lease on a former
+  99 Cents Only Store in Highland Park ([Colorado Boulevard, Mar 2026](../sources/sprouts-pasadena-2026.md)).
+- *Team inference:* this rests on the Sprouts point above and on Meridian's
+  growth "by taking over leases from chains that pulled out"
+  ([brief](../sources/client-brief.md)). Meridian's growth route is one that
+  competitors are now using too, in the area it most wants to enter. This is
+  one local example, not a measure of how scarce such space is (Q25).
 
 ## Tension worth naming
 
@@ -51,3 +60,4 @@ Q11–Q14 and Q25 in the [register](../analysis/open-questions.md).
 - [Store network](../entities/store-network.md)
 - [Store performance variation](store-performance-variation.md)
 - [Grocery sector trends](grocery-sector-trends.md)
+- [Sprouts Farmers Market](../entities/sprouts.md)
